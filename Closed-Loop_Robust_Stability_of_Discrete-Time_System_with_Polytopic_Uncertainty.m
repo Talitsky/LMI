@@ -23,6 +23,7 @@ for i = 1:3
     end
 end
 
+ops = sdpsettings('solver','sedumi' );
 sol = optimize(mat, []);
 %The output is:
 K = -value(L)*inv(value(G))
